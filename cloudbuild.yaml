@@ -1,4 +1,4 @@
 steps:
-  - name: 'bash'
-    id: hello
-    args: ['echo', 'Hello World']
+ - name: 'bash'
+   id: hello
+   args: ['echo', 'Hello World']
