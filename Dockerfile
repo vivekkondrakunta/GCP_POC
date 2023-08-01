@@ -16,7 +16,6 @@ RUN chgrp -R tomcat /opt/tomcat/bin
 RUN chgrp -R tomcat /opt/tomcat/lib
 RUN chmod g+rwx /opt/tomcat/bin
 RUN chmod g+r /opt/tomcat/bin/*
-vijay krishna 12:52 PM
 RUN rm -rf /opt/tomcat/webapps/*
 RUN cd /tmp && git clone https://github.com/DEV3L/java-mvn-hello-world-web-app.git
 RUN cd /tmp/java-mvn-hello-world-web-app && mvn clean install
