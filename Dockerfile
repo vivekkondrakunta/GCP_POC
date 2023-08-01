@@ -7,6 +7,6 @@ COPY . ./
 FROM nginx:1.23.3-alpine
 RUN rm /etc/nginx/conf.d/default.conf
 COPY nginx.conf /etc/nginx/nginx.conf
-COPY --from=build /usr/app/dist/* /usr/share/nginx/html/acmx-hazard-portlet-ui
+COPY --from=build /usr/app/dist/* /
 EXPOSE 4200
 #CMD [ "node", "server.js"]
